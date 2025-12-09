@@ -1,1 +1,72 @@
-Generic single-database configuration.
+#SmartAgro Backend
+
+REST API built with Node.js, Express, and MongoDB for managing Categories, Products, and Orders.
+
+Features
+
+CRUD for Categories
+
+CRUD for Products
+
+CRUD for Orders
+
+Clean REST API structure
+
+CORS enabled for frontend access
+
+JSON request body parsing
+
+Centralized error handling
+
+#Project Structure
+backend/
+│── models/
+│   ├── Category.js
+│   ├── Product.js
+│   └── Order.js
+│── routes/
+│   ├── categoryRoutes.js
+│   ├── productRoutes.js
+│   └── orderRoutes.js
+│── server.js
+│── package.json
+│── .env
+
+🛠️ Installation
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Create .env
+MONGO_URI=mongodb://127.0.0.1:27017/smartagro
+PORT=5000
+
+3️⃣ Start the server
+npm run dev
+
+
+Server runs at:
+
+ http://localhost:5000
+
+🔗 API Endpoints
+Categories
+Method	Endpoint	Description
+GET	/categories	List all categories
+POST	/categories	Create category
+PUT	/categories/:id	Update category
+DELETE	/categories/:id	Delete category
+Products
+Method	Endpoint	Description
+GET	/products	List all products
+POST	/products	Create product
+PUT	/products/:id	Update product
+DELETE	/products/:id	Delete product
+Orders
+Method	Endpoint	Description
+GET	/orders	List orders
+POST	/orders	Create order
+PUT	/orders/:id	Update order
+DELETE	/orders/:id	Delete order
+🧪 Testing With Postman
+
+Import the API into Postman and test all CRUD operations.
